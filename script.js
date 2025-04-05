@@ -109,8 +109,8 @@ function showQuestion() {
     current.answers.forEach((answer, index) => {
       const button = document.createElement("button");
       button.textContent = answer;
-      button.style.display = "block";
-      button.style.margin = "8px 0";
+      button.style.display = "inline-block";
+      button.style.margin = "8px";
       button.onclick = () => checkAnswer(index);
       answerButtons.appendChild(button);
     });
