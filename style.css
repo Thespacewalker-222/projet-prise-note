@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+  #quiz-container {
+    transition: opacity 0.5s ease-in-out;
+  }
+ /* Animation pour la question */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation pour les boutons de réponse */
+  .button-fade {
+    animation: buttonFade 0.5s ease-in-out;
+  }
+  
+  @keyframes buttonFade {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.intro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.intro-buttons .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.intro-buttons .btn:hover {
+    background-color: #45a049;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro {
+    animation: fadeIn 1.5s ease-in-out;
+}
+#quiz-section {
+    background-color: #f0f8ff;
+    padding: 50px;
+    text-align: center;
+}
+
+#quiz-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#answer-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#answer-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#next-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#next-button:hover {
+    background-color: #0056b3;
+}
+#videos-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.video-container {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+iframe {
+    border-radius: 8px;
+}
+#tips-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#astuce-container {
+    font-size: 1.2em;
+    background-color: #e1f7d5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3b2b;
+}
+ 

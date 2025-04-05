@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet - Prise de notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/banniere.jpg" alt="Bannière prise de notes" style="width: 100%; height: auto;">
+  </header>
+
+  <section id="introduction" class="intro">
+    <h2>Bienvenue sur notre site de prise de notes ! 📚</h2>
+    <p>Ce site a été conçu pour vous aider à améliorer vos techniques de prise de notes. Vous y trouverez des conseils, des vidéos explicatives, un quiz interactif, et bien plus !</p>
+    <p>Explorez les différentes sections ci-dessous pour découvrir des astuces pratiques et tester vos connaissances avec notre quiz.</p>
+
+    <div class="intro-buttons">
+        <a href="#quiz-section" class="btn">Commencer le quiz</a>
+        <a href="#videos-section" class="btn">Voir les vidéos</a>
+        <a href="#tips-section" class="btn">Lire les astuces</a>
+    </div>
+  </section>
+  <section id="videos-section">
+    <h2>Regardez ces vidéos pour mieux comprendre la prise de notes ! 🎥</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XARXkvAV2cQ?si=9uLzQVP3SQGPfg5e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/S9dX_JEJoJQ?si=Z0ObnssPYhlvq0XC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="quiz-section">
+    <h2>Testez vos connaissances ! 🧠</h2>
+    <div id="quiz-container">
+      <p id="question-text"></p>
+      <div id="answer-buttons"></div>
+      <p id="quiz-feedback"></p>
+      <button id="next-button" style="display:none;">Question suivante</button>
+      <div id="progress-container">
+        <div id="progress" style="height: 20px; background-color: #ddd;"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="tips-section">
+    <h2>Astuces pour améliorer ta prise de notes ! 💡</h2>
+    <div id="astuce-container">
+      <p id="conseil">Astuce du jour : <strong>Utilise des symboles pour aller plus vite !</strong></p>
+      <button onclick="changerAstuce()">Voir une autre astuce</button>
+    </div>
+  </section>
+  <footer>
+    <p>Projet réalisé par notre groupe et codé par Sami – Avril 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
